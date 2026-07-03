@@ -175,15 +175,8 @@
     <!-- HERO -->
     <section id="hero" class="hero-bg min-h-[100dvh] flex items-center relative">
         <div class="max-w-screen-2xl mx-auto px-6 md:px-8 pt-16 pb-20">
-            <!-- Left text panel: subtle contrast so it doesn't cover the lighthouse lettering -->
-            <div class="max-w-2xl bg-black/20 backdrop-blur-md rounded-3xl p-8 md:p-10 border border-white/10">
-                <div class="inline-flex items-center gap-x-2 bg-white/90 backdrop-blur px-4 py-1.5 rounded-3xl mb-6 shadow-sm border border-white/60">
-                    <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-                    <span class="text-xs font-bold tracking-[1.5px] text-emerald-700">NOW ENROLLING • 300+ STUDENTS</span>
-                </div>
-                
-                <span class="inline-block tag bg-white/90 text-emerald-700 mb-4">EXPLORE OUR OFFERINGS</span>
-                
+            <!-- Clean left panel - more lighthouse visible, only bottom stats kept -->
+            <div class="max-w-2xl bg-black/25 backdrop-blur-lg rounded-3xl p-8 md:p-10 border border-white/10">
                 <h1 data-i18n="hero_title" 
                     class="text-5xl md:text-6xl lg:text-6xl font-bold tracking-tighter text-white leading-[0.95] mb-5">
                     Your guiding light<br>to confident Spanish
@@ -194,7 +187,7 @@
                     Have you studied Spanish but feel like you're losing it? Latino Lighthouse is your space to practice, connect, and finally speak with confidence.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4">
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
                     <a href="#offer" 
                        class="group inline-flex items-center justify-center gap-x-3 bg-white text-slate-900 hover:bg-amber-50 font-semibold px-8 py-4 rounded-2xl text-base shadow-xl transition-all active:scale-[0.985]">
                         <span data-i18n="hero_cta1">Explore our offerings</span>
@@ -202,7 +195,7 @@
                     </a>
                 </div>
                 
-                <div class="mt-8 flex items-center gap-x-4 text-white/90 text-sm">
+                <div class="flex items-center gap-x-4 text-white/90 text-sm">
                     <div class="flex -space-x-2">
                         <div class="w-7 h-7 rounded-full bg-white/30 border border-white/50"></div>
                         <div class="w-7 h-7 rounded-full bg-white/30 border border-white/50"></div>
@@ -644,6 +637,34 @@
                     </div>
                 </div>
 
+                <!-- New: Converse Hispanic -->
+                <div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col">
+                    <img src="assets/images/Converse-hispanic.jpg" alt="Converse Hispanic conversation practice" class="w-full aspect-[688/460] object-cover">
+                    <div class="p-5 flex-1 flex flex-col">
+                        <span class="tag bg-[#00CEC9] text-white mb-3 self-start">CONVERSATION PRACTICE</span>
+                        <h3 class="font-bold text-[17px] tracking-tight leading-tight mb-1">Converse Hispanic</h3>
+                        <p class="text-xs text-slate-500 mb-auto">Relaxed guided sessions • Build confidence &amp; natural fluency</p>
+                        <button onclick="window.open('https://tidycal.com/spanish-conversation-club/converse-the-hispanic-world', '_blank')" 
+                                class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+                            See details and book <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cinema Together -->
+                <div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col">
+                    <img src="assets/images/cine-688.jpg" alt="Cinema Together Spanish film club" class="w-full aspect-[688/460] object-cover">
+                    <div class="p-5 flex-1 flex flex-col">
+                        <span class="tag bg-[#8E44AD] text-white mb-3 self-start">LISTENING PRACTICE</span>
+                        <h3 class="font-bold text-[17px] tracking-tight leading-tight mb-1">Cinema Together</h3>
+                        <p class="text-xs text-slate-500 mb-auto">Watch films, laugh, debate &amp; learn real expressions</p>
+                        <button onclick="window.open('https://tidycal.com/spanish-conversation-club/cinema-together', '_blank')" 
+                                class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+                            See details and book <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
                 <!-- 22. Spanish from Scratch - English -->
                 <div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col">
                     <img src="assets/images/Inglaterra-688.jpg" alt="Spanish from scratch for English speakers" class="w-full aspect-[688/460] object-cover">
@@ -680,34 +701,6 @@
                         <h3 class="font-bold text-[17px] tracking-tight leading-tight mb-1">L'Espagnol pour Débutants</h3>
                         <p class="text-xs text-slate-500 mb-auto">For French Speakers • A1 foundation</p>
                         <button onclick="window.open('https://tidycal.com/spanish-conversation-club/lespagnol-pour-debutants', '_blank')" 
-                                class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
-                            See details and book <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- New: Converse Hispanic -->
-                <div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col">
-                    <img src="assets/images/Converse-hispanic.jpg" alt="Converse Hispanic conversation practice" class="w-full aspect-[688/460] object-cover">
-                    <div class="p-5 flex-1 flex flex-col">
-                        <span class="tag bg-[#00CEC9] text-white mb-3 self-start">CONVERSATION PRACTICE</span>
-                        <h3 class="font-bold text-[17px] tracking-tight leading-tight mb-1">Converse Hispanic</h3>
-                        <p class="text-xs text-slate-500 mb-auto">Relaxed guided sessions • Build confidence &amp; natural fluency</p>
-                        <button onclick="window.open('https://tidycal.com/spanish-conversation-club/converse-the-hispanic-world', '_blank')" 
-                                class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
-                            See details and book <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 25. Cinema Together -->
-                <div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col">
-                    <img src="assets/images/cine-688.jpg" alt="Cinema Together Spanish film club" class="w-full aspect-[688/460] object-cover">
-                    <div class="p-5 flex-1 flex flex-col">
-                        <span class="tag bg-[#8E44AD] text-white mb-3 self-start">LISTENING PRACTICE</span>
-                        <h3 class="font-bold text-[17px] tracking-tight leading-tight mb-1">Cinema Together</h3>
-                        <p class="text-xs text-slate-500 mb-auto">Watch films, laugh, debate &amp; learn real expressions</p>
-                        <button onclick="window.open('https://tidycal.com/spanish-conversation-club/cinema-together', '_blank')" 
                                 class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
                             See details and book <i class="fa-solid fa-arrow-right text-xs"></i>
                         </button>
