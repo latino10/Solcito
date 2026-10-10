@@ -118,12 +118,8 @@ background-color: rgba(255,255,255,0.95);
 backdrop-filter: blur(12px);
 }
 
-.launch-banner {
-background: linear-gradient(90deg, #1B3A2F 0%, #1B691E 42%, #2D6A4F 70%, #8E44AD 100%);
-}
-.launch-banner a.launch-cta:hover {
-background: #FFF7E8;
-}
+
+
 
 
 .custom-shadow {
@@ -131,33 +127,15 @@ box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
 }
 
 /* Direct links to class subsections. Does not change layout. */
-#workshops, #masterclasses, #conversation, #courses, #otherencounters, #conversehispanic, #cinematogether {
+#workshops, #masterclasses, #conversation, #courses, #lumi, #otherencounters, #conversehispanic, #cinematogether {
   scroll-margin-top: 140px;
 }
 
 </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
-<!-- STICKY TOP: launch offer + navbar (visible the moment visitors land) -->
-<div class="sticky top-0 z-50">
-<!-- LAUNCH BANNER -->
-<div id="launch-banner" class="launch-banner text-white">
-<div class="max-w-screen-2xl mx-auto px-4 md:px-8 py-2.5 flex flex-col sm:flex-row items-center justify-center gap-x-4 gap-y-1.5 text-center">
-<div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
-<span class="inline-flex items-center text-[11px] font-bold tracking-[0.18em] uppercase text-[#F7DC6F]" data-i18n="banner_kicker">Launching</span>
-<span class="hidden sm:inline text-white/30">·</span>
-<span class="text-[13px] md:text-[15px] font-semibold tracking-tight text-white" data-i18n="banner_offer">50% OFF</span>
-<span class="hidden sm:inline text-white/30">·</span>
-<p class="text-[12px] md:text-[13px] font-medium tracking-tight text-white/90" data-i18n="banner_scope">Any class or workshop · Limited time</p>
-</div>
-<a href="#classes" class="launch-cta inline-flex items-center gap-x-1.5 bg-white text-slate-900 text-[12px] font-semibold px-3.5 py-1.5 rounded-full shadow-sm transition-colors" data-i18n="banner_cta">
-Reserve your spot
-<i class="fa-solid fa-arrow-right text-[10px]"></i>
-</a>
-</div>
-</div>
 <!-- NAVBAR -->
-<nav id="navbar" class="bg-white border-b border-slate-100 transition-all">
+<nav id="navbar" class="sticky top-0 z-50 bg-white border-b border-slate-100 transition-all">
 <div class="max-w-screen-2xl mx-auto">
 <div class="px-6 md:px-8 py-4 flex items-center justify-between">
 <!-- Logo -->
@@ -203,7 +181,7 @@ Take the free test
 </div>
 </div>
 </nav>
-</div>
+
 
 
 <!-- HERO -->
@@ -738,6 +716,33 @@ class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 
 class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
 <span data-i18n="btn_book">See dates &amp; price →</span>
 </button>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- ========== LUMI - PRIVATE CLASSES ========== -->
+<div id="lumi" class="mb-16">
+<h3 class="text-3xl font-semibold text-slate-800 mb-8 flex items-center gap-3" data-i18n="cat_lumi">
+Private Classes with Lumi
+</h3>
+<div class="max-w-5xl mx-auto">
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden">
+<img src="assets/images/Lumi.particular.jpg" alt="Lumi the llama inviting you to private Spanish classes at Latino Lighthouse" class="w-full h-auto object-cover">
+<div class="p-6 md:p-8 text-center">
+<p class="text-slate-600 text-lg mb-6 max-w-2xl mx-auto">
+Looking for personalized private classes? Complete the free level test and tell us your goals and availability. One of our teachers will get in touch with you.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="#test" class="inline-flex items-center justify-center gap-x-2 bg-[#1B691E] hover:bg-emerald-800 text-white font-semibold px-8 py-3 rounded-2xl transition-colors">
+Take the free level test
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+<a href="mailto:info@latinolighthouse.com?subject=Private%20Classes%20Request" class="inline-flex items-center justify-center gap-x-2 bg-white border-2 border-[#1B691E] text-[#1B691E] hover:bg-emerald-50 font-semibold px-8 py-3 rounded-2xl transition-colors">
+Email us your goals
+</a>
+</div>
 </div>
 </div>
 </div>
