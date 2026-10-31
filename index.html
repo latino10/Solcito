@@ -1,110 +1,1597 @@
-Links directos listos para usar
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latino Lighthouse | Spanish Academy for Expats & Professionals</title>
+<meta name="description" content="Your guiding light to confident Spanish. Private lessons, courses from beginner to proficiency, masterclasses and free cultural encounters with qualified native teachers.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background:#f8fafc; color:#1e293b; }
+html { scroll-behavior: smooth; }
+button, [role="button"] { cursor: pointer; }
+.heading-serif { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; line-height: 1.1; }
+.nav-link { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+.nav-link:hover { color: #EA1E1D; transform: translateY(-1px); }
+.class-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.class-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+.offer-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.offer-card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
+.teacher-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.teacher-card:hover { transform: translateY(-6px); }
+.lang-btn { transition: all 0.2s ease; }
+.lang-btn.active { background-color: #1B691E; color: white; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+.hero-bg {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.40)), url('assets/images/HERO-1920.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.nav-scrolled {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  background-color: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+}
+#offer, #courses, #culture, #masterclasses, #conversation, #about, #team, #test,
+#private-lessons, #spanish-from-scratch, #spanisch-anfaenger, #espagnol-debutants,
+#a2-elementary, #b1-intermediate, #b2-upper-intermediate, #c1-advanced, #c2-proficiency,
+#integrate-with-confidence, #spanish-for-work, #business-spanish, #subjunctive-latin-music,
+#preterite-imperfect, #tango-your-spanish, #spanish-idioms, #spanish-across-borders,
+#por-vs-para, #ser-or-estar, #weather-meteorology, #speaking-about-future, #direct-indirect-pronouns,
+#mindfulness, #harry-potter, #sports-outdoor, #winter-vacations, #seaside-chat, #car-rental,
+#travel-talk, #lord-of-the-rings, #love-celebrations, #converse-hispanic, #cinema-together { scroll-margin-top: 128px; }
+
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+<div class="hidden bg-emerald-100 text-emerald-700 bg-teal-100 text-teal-700 bg-amber-100 text-amber-700 bg-orange-100 text-orange-700 bg-rose-100 text-rose-700 bg-violet-100 text-violet-700 !border-emerald-700 !bg-emerald-50 !text-emerald-700"></div>
+<!-- NAVBAR -->
+<nav id="navbar" class="sticky top-0 z-50 bg-white border-b border-slate-100 transition-all">
+<div class="max-w-screen-2xl mx-auto">
+<div class="px-6 md:px-8 py-3 flex items-center justify-between gap-4">
+<!-- Logo -->
+<div class="flex items-center gap-x-3 shrink-0">
+<div class="w-11 h-11 bg-gradient-to-br from-[#EA1E1D] via-[#8E44AD] to-[#1B691E] rounded-2xl flex items-center justify-center shadow-inner">
+<i class="fa-solid fa-lightbulb text-white text-3xl"></i>
+</div>
+<div>
+<div class="font-bold text-2xl tracking-tighter text-slate-900">Latino Lighthouse</div>
+<div class="text-xs sm:text-sm font-medium text-slate-800 tracking-wide leading-snug mt-0.5" data-i18n="brand_sub">Online Spanish Academy • Global Community • Latin Culture</div>
+</div>
+</div>
+
+<div class="flex items-center gap-x-3">
+<!-- Language Switcher -->
+<div class="flex items-center bg-slate-100 rounded-3xl p-1 text-sm font-semibold">
+<button onclick="switchLanguage('en')" id="btn-en"
+class="lang-btn active px-4 py-1.5 rounded-3xl text-xs tracking-wider">EN</button>
+<button onclick="switchLanguage('es')" id="btn-es"
+class="lang-btn px-4 py-1.5 rounded-3xl text-xs tracking-wider text-slate-600">ES</button>
+</div>
+
+<!-- CTA -->
+<a href="#test"
+class="hidden md:flex items-center gap-x-2 bg-[#1B691E] hover:bg-emerald-800 transition-colors text-white text-sm font-semibold px-5 py-2.5 rounded-2xl shadow-lg shadow-emerald-900/20" data-i18n="nav_cta">
+Take the free test
+</a>
+
+<!-- Mobile menu -->
+<button class="lg:hidden w-10 h-10 flex items-center justify-center text-slate-600" onclick="toggleMobileMenu()">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+
+<!-- Section menu: full line, without "What We Offer" -->
+<div class="hidden lg:flex items-center justify-between gap-x-4 px-8 pb-3 text-sm font-medium">
+<a href="#courses" class="nav-link text-slate-600 hover:text-slate-900 whitespace-nowrap" data-i18n="nav_courses">Courses & Workshops</a>
+<a href="#culture" class="nav-link text-slate-600 hover:text-slate-900 whitespace-nowrap" data-i18n="nav_culture">Latin Culture</a>
+<a href="#masterclasses" class="nav-link text-slate-600 hover:text-slate-900 whitespace-nowrap" data-i18n="nav_master">Masterclasses</a>
+<a href="#conversation" class="nav-link text-slate-600 hover:text-slate-900 whitespace-nowrap" data-i18n="nav_conversation">Conversation</a>
+<a href="#about" class="nav-link text-slate-600 hover:text-slate-900 whitespace-nowrap" data-i18n="nav_about">About Me</a>
+<a href="#team" class="nav-link text-slate-600 hover:text-slate-900 whitespace-nowrap" data-i18n="nav_team">Our Teachers</a>
+<a href="#test" class="nav-link text-slate-600 hover:text-slate-900 whitespace-nowrap" data-i18n="nav_test">Level Test</a>
+</div>
+</div>
+</div>
+</nav>
 
 
 
+<!-- HERO -->
+<section id="hero" class="hero-bg min-h-[100dvh] flex items-center relative">
+        <div class="max-w-screen-2xl mx-auto px-6 md:px-8 pt-16 pb-20">
+            <div class="max-w-2xl bg-black/25 backdrop-blur-lg rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl">
+                
+                <h1 data-i18n="hero_title" 
+                    class="text-5xl md:text-6xl lg:text-6xl font-bold tracking-tighter text-white leading-[0.95] mb-6">
+                    Your guiding light<br>
+                    <span class="text-amber-200">to Spanish that flows</span>
+                </h1>
+                
+                <p data-i18n="hero_sub" 
+                   class="max-w-lg text-lg md:text-xl text-white/90 font-light tracking-tight mb-8 leading-relaxed">
+                    Have you studied Spanish but feel like you’re losing it?<br>
+                    Latino Lighthouse is your warm, professional space to practice with purpose, connect with people like you, and finally use the language in real life.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 mb-9">
+                    <a href="#offer" 
+                       class="group inline-flex items-center justify-center gap-x-3 bg-white text-slate-900 hover:bg-amber-50 font-semibold px-8 py-4 rounded-2xl text-base shadow-xl transition-all active:scale-[0.985]">
+                        <span data-i18n="hero_cta1">Explore our offerings</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
+            <div class="flex flex-col items-center text-white/60 text-xs tracking-widest">
+                <span>SCROLL TO BEGIN</span>
+                <i class="fa-solid fa-chevron-down mt-1 animate-bounce"></i>
+            </div>
+        </div>
+    </section>
 
+<!-- WHAT WE OFFER -->
+<section id="offer" class="max-w-screen-2xl mx-auto px-6 md:px-8 pt-20 pb-16">
+<div class="text-center mb-14">
+<div class="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-bold tracking-[2.5px] rounded-3xl mb-4" data-i18n="offer_kicker">
+EVERYTHING YOU NEED
+</div>
+<h2 data-i18n="offer_title" class="text-4xl md:text-5xl font-bold tracking-tighter heading-serif text-slate-900 mb-5">
+What We Offer at Latino Lighthouse
+</h2>
+<p data-i18n="offer_sub" class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-slate-600 leading-relaxed">
+Choose the path that fits your life and goals.<br>
+Every offering is designed to take you from understanding Spanish to speaking it with ease and joy.
+</p>
+</div>
 
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 
+<a href="#courses" class="offer-card bg-white border border-slate-100 rounded-3xl p-7 flex gap-5 no-underline text-inherit">
+<div class="w-12 h-12 flex-shrink-0 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-user text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-xl tracking-tight mb-1" data-i18n="offer_1_title">Private Classes</h3>
+<p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="offer_1_desc">One-to-one with qualified native teachers. Personalized to your goals and schedule.</p>
+</div>
+</a>
 
+<a href="#courses" class="offer-card bg-white border border-slate-100 rounded-3xl p-7 flex gap-5 no-underline text-inherit">
+<div class="w-12 h-12 flex-shrink-0 bg-[#FF6B35] text-white rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-layer-group text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-xl tracking-tight mb-1" data-i18n="offer_2_title">Courses by Level A1–C2</h3>
+<p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="offer_2_desc">Structured programs from beginner to proficiency. Small groups, from one student.</p>
+</div>
+</a>
 
+<a href="#courses" class="offer-card bg-white border border-slate-100 rounded-3xl p-7 flex gap-5 no-underline text-inherit">
+<div class="w-12 h-12 flex-shrink-0 bg-[#1A5276] text-white rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-briefcase text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-xl tracking-tight mb-1" data-i18n="offer_3_title">Business Spanish</h3>
+<p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="offer_3_desc">Live classes with a certified teacher and lawyer, or self-study for busy professionals.</p>
+</div>
+</a>
 
+<a href="#courses" class="offer-card bg-white border border-slate-100 rounded-3xl p-7 flex gap-5 no-underline text-inherit">
+<div class="w-12 h-12 flex-shrink-0 bg-[#FF8A65] text-white rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-plane text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-xl tracking-tight mb-1" data-i18n="offer_4_title">Spanish for Tourism & Migration</h3>
+<p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="offer_4_desc">Practical language training for traveling or moving to a Spanish-speaking country. Real-life situations.</p>
+</div>
+</a>
 
+<a href="#courses" class="offer-card bg-white border border-slate-100 rounded-3xl p-7 flex gap-5 no-underline text-inherit">
+<div class="w-12 h-12 flex-shrink-0 bg-[#8E44AD] text-white rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-music text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-xl tracking-tight mb-1" data-i18n="offer_5_title">One-of-a-kind Workshops</h3>
+<p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="offer_5_desc">The Matrix for past tenses, Latin music for the subjunctive, tango for Argentine Spanish.</p>
+</div>
+</a>
 
+<a href="#culture" class="offer-card bg-white border border-slate-100 rounded-3xl p-7 flex gap-5 no-underline text-inherit">
+<div class="w-12 h-12 flex-shrink-0 bg-[#1B691E] text-white rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-film text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-xl tracking-tight mb-1" data-i18n="offer_6_title">Cinema Together</h3>
+<p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="offer_6_desc">Watch Spanish films online, laugh, debate, and pick up real colloquial expressions. Free sessions.</p>
+</div>
+</a>
 
+<a href="#culture" class="offer-card bg-white border border-slate-100 rounded-3xl p-7 flex gap-5 no-underline text-inherit">
+<div class="w-12 h-12 flex-shrink-0 bg-[#F7DC6F] text-slate-800 rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-earth-americas text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-xl tracking-tight mb-1" data-i18n="offer_7_title">Converse Hispanic</h3>
+<p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="offer_7_desc">Country-by-country conversations about life, customs, and Latin American culture.</p>
+</div>
+</a>
 
+<a href="#culture" class="offer-card bg-white border border-slate-100 rounded-3xl p-7 flex gap-5 no-underline text-inherit">
+<div class="w-12 h-12 flex-shrink-0 bg-[#00CEC9] text-white rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-comment-dots text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-xl tracking-tight mb-1" data-i18n="offer_8_title">Idioms & Borders</h3>
+<p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="offer_8_desc">Spanish idioms, regional flavors, and cultural deep-dives that make the language come alive. Free.</p>
+</div>
+</a>
 
+<a href="#masterclasses" class="offer-card bg-white border border-slate-100 rounded-3xl p-7 flex gap-5 no-underline text-inherit">
+<div class="w-12 h-12 flex-shrink-0 bg-[#EA1E1D] text-white rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-graduation-cap text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-xl tracking-tight mb-1" data-i18n="offer_9_title">Interactive Masterclasses</h3>
+<p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="offer_9_desc">The topics students debate most: Ser vs. Estar, Por vs. Para, pronouns, and more.</p>
+</div>
+</a>
 
+<a href="#conversation" class="offer-card bg-white border border-slate-100 rounded-3xl p-7 flex gap-5 no-underline text-inherit">
+<div class="w-12 h-12 flex-shrink-0 bg-emerald-700 text-white rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-comments text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-xl tracking-tight mb-1" data-i18n="offer_10_title">Conversation Practice</h3>
+<p class="text-slate-600 text-[15px] leading-relaxed" data-i18n="offer_10_desc">Wellness with a psychologist, literature with Harry Potter and Lord of the Rings fans, plus everyday topics.</p>
+</div>
+</a>
 
+</div>
 
+<div class="mt-16 text-center max-w-3xl mx-auto">
+<div class="inline-block bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-3xl px-10 py-7 shadow-xl">
+<p data-i18n="offer_cta" class="text-xl md:text-2xl font-medium tracking-tight leading-snug mb-2">
+Ready to stop just “knowing” Spanish and finally start speaking it for real?
+</p>
+<p class="text-emerald-400 text-base font-semibold" data-i18n="offer_cta2">
+Latino Lighthouse is much more than classes: it’s a community.
+</p>
+</div>
+</div>
+</section>
 
+<!-- COURSES AND WORKSHOPS -->
+<section id="courses" class="bg-white border-t border-slate-100 py-16">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-y-4 mb-10">
+<div>
+<div class="text-emerald-600 text-xs font-bold tracking-[2px]" data-i18n="courses_kicker">YOUR PATH</div>
+<h2 data-i18n="courses_title" class="text-4xl md:text-5xl font-bold tracking-tighter heading-serif">Courses and Workshops</h2>
+</div>
+<p data-i18n="courses_sub" class="max-w-md text-slate-600">Private lessons, courses from beginner to proficiency, and signature workshops. Small groups, from one student.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="private-lessons">
+<img src="assets/images/PRIVATE688.jpg" alt="Private Lessons" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900" data-i18n="card_private_title">Private Lessons</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit" data-i18n="badge_oto">One-to-One</span>
+<p class="text-xs text-slate-500 mb-auto" data-i18n="card_private_sub">Personalized Lessons | All levels</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/private-classes', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="spanish-from-scratch">
+<img src="assets/images/englishspeakers688.jpg" alt="Spanish from Scratch for English Speakers" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Spanish from Scratch</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit" data-i18n="badge_en">For English Speakers • Beginner</span>
+<p class="text-xs text-slate-500 mb-auto" data-i18n="course_pace">8 classes/month · 1.5h each · 3-month course</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/spanish-from-scratch', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="spanisch-anfaenger">
+<img src="assets/images/germanos688.jpg" alt="Spanisch für Anfänger" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Spanisch für Anfänger</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit" data-i18n="badge_de">For German Speakers • Beginner</span>
+<p class="text-xs text-slate-500 mb-auto">1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/spanisch-fur-anfanger', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="espagnol-debutants">
+<img src="assets/images/FRANCOPARLANTES688.jpg" alt="L'Espagnol pour Débutants" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">L'Espagnol pour Débutants</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit" data-i18n="badge_fr">For French Speakers • Beginner</span>
+<p class="text-xs text-slate-500 mb-auto" data-i18n="course_pace">8 classes/month · 1.5h each · 3-month course</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/lespagnol-pour-debutants', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="a2-elementary">
+<img src="assets/images/A2688.png" alt="Elementary A2" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900" data-i18n="lvl_a2">Elementary</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit" data-i18n="badge_a2">A2 LEVEL</span>
+<p class="text-xs text-slate-500 mb-auto" data-i18n="course_pace">8 classes/month · 1.5h each · 3-month course</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/elementary', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="b1-intermediate">
+<img src="assets/images/B1688.png" alt="Intermediate B1" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900" data-i18n="lvl_b1">Intermediate</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit" data-i18n="badge_b1">B1 LEVEL</span>
+<p class="text-xs text-slate-500 mb-auto" data-i18n="course_pace">8 classes/month · 1.5h each · 3-month course</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/intermediate', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="b2-upper-intermediate">
+<img src="assets/images/B2688.png" alt="Upper-Intermediate B2" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900" data-i18n="lvl_b2">Upper-Intermediate</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit" data-i18n="badge_b2">B2 LEVEL</span>
+<p class="text-xs text-slate-500 mb-auto" data-i18n="course_pace">8 classes/month · 1.5h each · 3-month course</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/upper-intermediate', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="c1-advanced">
+<img src="assets/images/C1688.png" alt="Advanced C1" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900" data-i18n="lvl_c1">Advanced</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit" data-i18n="badge_c1">C1 LEVEL</span>
+<p class="text-xs text-slate-500 mb-auto" data-i18n="course_pace">8 classes/month · 1.5h each · 3-month course</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/advanced', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="c2-proficiency">
+<img src="assets/images/C2688.png" alt="Proficiency C2" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900" data-i18n="lvl_c2">Proficiency</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit" data-i18n="badge_c2">C2 LEVEL</span>
+<p class="text-xs text-slate-500 mb-auto" data-i18n="course_pace">8 classes/month · 1.5h each · 3-month course</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/proficiency', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="integrate-with-confidence">
+<img src="assets/images/Expats-688.jpg" alt="Integrate with Confidence" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Integrate with Confidence</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Expats & Digital Nomads</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B1 Level | 4-Part Immersion</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/expats-and-digital-nomads', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="spanish-for-work">
+<img src="assets/images/work2-688.jpg" alt="Spanish for Work" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Spanish for Work</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Tailored Professional Guidance</span>
+<p class="text-xs text-slate-500 mb-auto">B1-C1 Level | 4-Part Immersion</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/b2-upper-intermediate-and-business', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="business-spanish">
+<img src="assets/images/meetings-688.jpg" alt="Business Spanish Self-Study" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Business Spanish</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Self-Study Course for Professionals</span>
+<p class="text-xs text-slate-500 mb-auto">B1-C1 level | Self-paced</p>
+<button onclick="window.open('https://selfstudyspanish.thinkific.com/courses/business-spanish', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="subjunctive-latin-music">
+<img src="assets/images/subju1-688.jpg" alt="Learning the Subjunctive with Latin Music" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Learning the Subjunctive with Latin Music</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Let’s Dance and Sing it!</span>
+<p class="text-xs text-slate-500 mb-auto">B1-B2 Level | 2-Part Immersion</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/learning-the-subjunctive-with-latin-music', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="preterite-imperfect">
+<img src="assets/images/Matrix-688.png" alt="The Preterite and the Imperfect" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">The Preterite & The Imperfect</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Learning with The Matrix</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B2 Level | 4-Part Immersion</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/learning-the-preterite-and-the-imperfect-with-the-matrix', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="tango-your-spanish">
+<img src="assets/images/lau.argen-688.jpg" alt="Tango Your Spanish" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Tango Your Spanish</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Music, Idioms & Argentine Culture</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B1 Level | 4-Part Immersion</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/tango-your-spanish', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+</div>
+</div>
+</section>
 
+<!-- LATIN CULTURE AND FREE ENCOUNTERS -->
+<section id="culture" class="bg-slate-50 border-t border-slate-100 py-16">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-y-4 mb-10">
+<div>
+<div class="text-emerald-600 text-xs font-bold tracking-[2px]" data-i18n="culture_kicker">100% FREE</div>
+<h2 data-i18n="culture_title" class="text-4xl md:text-5xl font-bold tracking-tighter heading-serif">Latin Culture and Free Encounters</h2>
+</div>
+<p data-i18n="culture_sub" class="max-w-md text-slate-600">Films, countries, idioms and the Spanish of every border. Come in, talk, and stay for the culture.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
+<div id="conversehispanic" class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col">
+<img src="assets/images/Converse-hispanic.jpg" alt="Converse Hispanic" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Converse Hispanic</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Let's Learn about Each Country</span>
+<p class="text-xs text-slate-500 mb-auto">All levels welcome | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/converse-the-hispanic-world', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_free">See dates · 100% free</span>
+</button>
+</div>
+</div>
 
+<div id="cinematogether" class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col">
+<img src="assets/images/cine-688.jpg" alt="Cinema Together" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Cinema Together</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Watch Films, Debate & Learn Real Expressions</span>
+<p class="text-xs text-slate-500 mb-auto">All levels welcome | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/cinema-together', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_free">See dates · 100% free</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="spanish-idioms">
+<img src="assets/images/idioms-688.jpg" alt="Spanish Idioms" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Spanish Idioms</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Humour & Hispanic Culture</span>
+<p class="text-xs text-slate-500 mb-auto">All levels Welcome | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/spanish-idioms', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_free">See dates · 100% free</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="spanish-across-borders">
+<img src="assets/images/Borders-688.jpg" alt="Spanish across Borders" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Spanish across Borders</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Everyday words from Spain to Patagonia</span>
+<p class="text-xs text-slate-500 mb-auto">All levels Welcome | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/spanish-across-borders', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_free">See dates · 100% free</span>
+</button>
+</div>
+</div>
 
-SectorLink directoMasterclasseshttps://latino-lighthouse.vercel.app/#masterclassesConversation Practicehttps://latino-lighthouse.vercel.app/#conversationTest de nivelhttps://latino-lighthouse.vercel.app/#testCourses & Workshopshttps://latino-lighthouse.vercel.app/#coursesLatin Culture & Free Encountershttps://latino-lighthouse.vercel.app/#cultureWhat We Offerhttps://latino-lighthouse.vercel.app/#offerAbout Me (Solange)https://latino-lighthouse.vercel.app/#aboutOur Teachershttps://latino-lighthouse.vercel.app/#teamCómo usarlos
-En Instagram / Facebook / WhatsApp / email: pegás el link completo y la persona llega directo a esa sección sin hacer scroll.
-En el menú del sitio (navbar) ya están todos estos links.
-Funcionan tanto en desktop como en móvil.
-¿Querés que agregue anclas más específicas (por ejemplo #porvspara, #serestar, #harrypotter, #mindfulness, etc.) dentro de Masterclasses o Conversation Practice?Si sí, avisame cuáles y te preparo el bloque de código listo para copiar y pegar en el index.html del repo. Si no, con los links de arriba ya estás cubierta.Si, ya que estamos, dame anclas de todo. de cada evento o claseListo. Preparé el index.html actualizado con anclas en todas las tarjetas (cada clase, curso, workshop, masterclass y conversation practice).
-Cómo usarlo
+</div>
+</div>
+</section>
 
-Entrá a tu repo: https://github.com/latino10/Solcito
-Abrí el archivo index.html
-Reemplazá todo el contenido por el archivo que te dejo abajo
-Hacé commit (Vercel lo despliega solo)
+<!-- MASTERCLASSES -->
+<section id="masterclasses" class="bg-white border-t border-slate-100 py-16">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-y-4 mb-10">
+<div>
+<div class="text-emerald-600 text-xs font-bold tracking-[2px]" data-i18n="master_kicker">GO DEEPER</div>
+<h2 data-i18n="master_title" class="text-4xl md:text-5xl font-bold tracking-tighter heading-serif">Masterclasses</h2>
+</div>
+<p data-i18n="master_sub" class="max-w-md text-slate-600">Short, focused sessions on the questions every Spanish learner asks.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="por-vs-para">
+<img src="assets/images/por-688.jpg" alt="POR VS PARA" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">POR VS PARA</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Master this Classical Challenge!</span>
+<p class="text-xs text-slate-500 mb-auto">A2-C1 Level | 90 min</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/por-vs-para', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
-Lista completa de links directos
-Cursos y Workshops
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="ser-or-estar">
+<img src="assets/images/shakespeare-688.png" alt="SER or ESTAR" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">SER or ESTAR?</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">The Ultimate Spanish Verb Dilemma</span>
+<p class="text-xs text-slate-500 mb-auto">All levels Welcome | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/ser-o-estar', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
-https://latino-lighthouse.vercel.app/#private-lessons
-https://latino-lighthouse.vercel.app/#spanish-from-scratch
-https://latino-lighthouse.vercel.app/#spanisch-anfaenger
-https://latino-lighthouse.vercel.app/#espagnol-debutants
-https://latino-lighthouse.vercel.app/#a2-elementary
-https://latino-lighthouse.vercel.app/#b1-intermediate
-https://latino-lighthouse.vercel.app/#b2-upper-intermediate
-https://latino-lighthouse.vercel.app/#c1-advanced
-https://latino-lighthouse.vercel.app/#c2-proficiency
-https://latino-lighthouse.vercel.app/#integrate-with-confidence
-https://latino-lighthouse.vercel.app/#spanish-for-work
-https://latino-lighthouse.vercel.app/#business-spanish
-https://latino-lighthouse.vercel.app/#subjunctive-latin-music
-https://latino-lighthouse.vercel.app/#preterite-imperfect
-https://latino-lighthouse.vercel.app/#tango-your-spanish
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="weather-meteorology">
+<img src="assets/images/clima-688.jpg" alt="Weather and Meteorology" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Weather and Meteorology</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Talk about it Like a Local</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B1 Level | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/weather-and-meteorology', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
-Culture (gratis)
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="speaking-about-future">
+<img src="assets/images/futuro-688.jpg" alt="Speaking About the Future" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Speaking About the Future</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Plan Predictions and Dreams</span>
+<p class="text-xs text-slate-500 mb-auto" data-i18n="future_sub">A2-B1 Level | 1.5 hours</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/speaking-about-the-future', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
-https://latino-lighthouse.vercel.app/#converse-hispanic
-https://latino-lighthouse.vercel.app/#cinema-together
-https://latino-lighthouse.vercel.app/#spanish-idioms
-https://latino-lighthouse.vercel.app/#spanish-across-borders
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="direct-indirect-pronouns">
+<img src="assets/images/pronombres-688.jpg" alt="Direct and Indirect Pronouns" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Direct & Indirect Pronouns</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Never Confuse Them Again</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B2 Level | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/pronombres-de-od-o-ind', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
-Masterclasses
+</div>
+</div>
+</section>
 
-https://latino-lighthouse.vercel.app/#por-vs-para
-https://latino-lighthouse.vercel.app/#ser-or-estar
-https://latino-lighthouse.vercel.app/#weather-meteorology
-https://latino-lighthouse.vercel.app/#speaking-about-future
-https://latino-lighthouse.vercel.app/#direct-indirect-pronouns
+<!-- CONVERSATION PRACTICE -->
+<section id="conversation" class="bg-slate-50 border-t border-b border-slate-100 py-16">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-y-4 mb-10">
+<div>
+<div class="text-emerald-600 text-xs font-bold tracking-[2px]" data-i18n="conv_kicker">SPEAK FOR REAL</div>
+<h2 data-i18n="conv_title" class="text-4xl md:text-5xl font-bold tracking-tighter heading-serif">Conversation Practice</h2>
+</div>
+<p data-i18n="conv_sub" class="max-w-md text-slate-600">Guided practice on real topics, from wellness and travel to literature.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
-Conversation Practice
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="mindfulness">
+<img src="assets/images/mindfulness-688.jpg" alt="Let's Talk About Mindfulness" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Let's Talk About Mindfulness</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Spanish and Wellness</span>
+<p class="text-xs text-slate-500 mb-auto">B1-C2 Level | 4-Part Immersion</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/mindfullness-and-well-being', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
-https://latino-lighthouse.vercel.app/#mindfulness
-https://latino-lighthouse.vercel.app/#harry-potter
-https://latino-lighthouse.vercel.app/#sports-outdoor
-https://latino-lighthouse.vercel.app/#winter-vacations
-https://latino-lighthouse.vercel.app/#seaside-chat
-https://latino-lighthouse.vercel.app/#car-rental
-https://latino-lighthouse.vercel.app/#travel-talk
-https://latino-lighthouse.vercel.app/#lord-of-the-rings
-https://latino-lighthouse.vercel.app/#love-celebrations
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="harry-potter">
+<img src="assets/images/Potter-688.jpg" alt="Harry Potter Fans Club" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Harry Potter Fans Club</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Potterchat, Magical Conversations</span>
+<p class="text-xs text-slate-500 mb-auto">B1-C2 Level | 4-Part Immersion</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/harry-potter-club', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="sports-outdoor">
+<img src="assets/images/aire-libre-688.jpg" alt="Sports and Outdoor Activities" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Sports & Outdoor Activities</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Wild Spanish Adventures</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B1 Level | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/sports-and-outdoor-activities', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
-Archivo completo para copiar y pegar
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="winter-vacations">
+<img src="assets/images/invierno-688.jpg" alt="Winter Vacations and Activities" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Winter Vacations & Activities</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Hot Cocoa and Conversation</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B1 Level | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/winter-vacations-and-activities', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
-El archivo ya tiene:
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="seaside-chat">
+<img src="assets/images/playa-688.jpg" alt="Seaside Chat" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Seaside Chat</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Beach Vocabulary & Summer Vibes</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B1 Level | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/seaside-chat', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
-Ancla única en cada tarjeta
-scroll-margin-top para que no quede tapada por el menú fijo
-Todo el resto del sitio exactamente igual
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="car-rental">
+<img src="assets/images/car-688.jpg" alt="Car Rental and Mechanic Services" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Car Rental & Mechanic Services</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Essential Vocabulary for the Road</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B2 Level | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/car-rental-and-mechanic-services', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
 
-¿Querés que ajuste algún nombre de ancla (por ejemplo que sea más corto o en español)?
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="travel-talk">
+<img src="assets/images/travel.jpg" alt="Travel Talk" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Travel Talk</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Prepare a Trip and Give Recommendations</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B1 Level | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/preparar-un-viaje-y-recomendar', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
+
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="lord-of-the-rings">
+<img src="assets/images/TheRing-688.jpg" alt="The Lord of the Rings" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">The Lord of the Rings</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Epic conversations in Middle-earth</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B2 Level | 4-Part Immersion</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/the-lord-of-the-rings-4-part-spanish-immersion', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
+
+<div class="class-card bg-white border border-slate-200 rounded-3xl overflow-hidden flex flex-col" id="love-celebrations">
+<img src="assets/images/dating-688.jpg" alt="Love and Celebrations" class="w-full aspect-[688/460] object-cover">
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="font-bold text-[17px] tracking-tight leading-tight mb-3 text-slate-900">Love & Celebrations</h4>
+<span class="inline-block bg-[#FF6B35] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 w-fit">Romantic Vocabulary and Festive Traditions</span>
+<p class="text-xs text-slate-500 mb-auto">A2-B1 Level | 1 hour</p>
+<button onclick="window.open('https://tidycal.com/spanish-conversation-club/dating-love-and-celebrations', '_blank')"
+class="mt-4 w-full py-3 bg-[#1B691E] hover:bg-emerald-800 active:bg-emerald-900 transition text-white text-sm font-semibold rounded-2xl flex items-center justify-center gap-x-2">
+<span data-i18n="btn_book">See dates & price →</span>
+</button>
+</div>
+</div>
+
+</div>
+<div class="text-center mt-10">
+<p class="text-sm text-slate-500" data-i18n="classes_footnote">Can't find what you're looking for? <a href="#test" class="text-emerald-700 font-semibold hover:underline">Take the free level test</a> and we'll recommend the perfect group for you.</p>
+</div>
+</div>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about" class="max-w-screen-2xl mx-auto px-6 md:px-8 py-20">
+<div class="grid md:grid-cols-12 gap-x-12 items-center">
+<div class="md:col-span-5 mb-10 md:mb-0">
+<div class="relative">
+<img src="assets/images/1.png" alt="Solange Hansen - Founder of Latino Lighthouse"
+class="w-full max-w-md mx-auto md:mx-0 rounded-3xl shadow-2xl border border-slate-100">
+<div class="absolute -bottom-4 -right-4 bg-white border border-slate-100 rounded-2xl px-5 py-3 shadow-lg hidden md:block">
+<div class="flex items-center gap-x-2 text-sm">
+<i class="fa-solid fa-globe text-emerald-600"></i>
+<span class="font-semibold">20+ years teaching • Lawyer</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="md:col-span-7">
+<div class="max-w-2xl">
+<div class="uppercase tracking-[2px] text-xs font-bold text-emerald-600 mb-2">FOUNDER &amp; LEAD TEACHER</div>
+<h2 data-i18n="about_title" class="text-5xl font-bold tracking-tighter heading-serif mb-6">Hi! I’m Solange Hansen</h2>
+
+<div class="prose prose-slate max-w-none text-[15.5px] leading-relaxed text-slate-600">
+<p data-i18n="about_p1">I’m a lawyer from Argentina specialized in Immigration and Labor Law, and a Spanish teacher for foreigners. Since graduating as a Spanish teacher, I’ve had the privilege of guiding students from all over the world through private lessons and at the international Berlitz Institute. I’ve prepared them for a variety of exams, with a special focus on dynamic group classes.</p>
+
+<p class="mt-4" data-i18n="about_p2">I founded Latino Lighthouse with one clear mission: to help you move from “I understand Spanish” to speaking it with real confidence. As you know, the heart of any language is speaking it—both while learning and to maintain your fluency. With us, you’ll achieve this through full immersion from day one, through real conversations, role-plays, videos, and rich cultural context.</p>
+
+<p class="mt-4" data-i18n="about_p3">My goal is for you to enjoy the process to the fullest while making real, lasting progress. I want Latino Lighthouse to be a true community for you: a welcoming space where you can make friends, practice the language, and immerse yourself in the vibrant Latin culture.</p>
+</div>
+
+<div class="mt-8 flex flex-wrap gap-3">
+<a href="https://wa.me/5491180432323" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-x-2 px-6 py-3 bg-[#25D366] hover:bg-[#1DA851] text-white font-semibold rounded-2xl text-sm transition-colors">
+<i class="fa-solid fa-envelope"></i>
+<span data-i18n="contact_direct">Contact me directly</span>
+</a>
+<a href="https://www.linkedin.com/in/solange-hansen/" target="_blank" class="inline-flex items-center gap-x-2 px-6 py-3 bg-[#0A66C2] hover:bg-[#004182] text-white font-semibold rounded-2xl text-sm transition-colors">
+<i class="fa-brands fa-linkedin"></i>
+<span data-i18n="contact_linkedin">Connect on LinkedIn</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- OUR TEACHERS / THE TEAM -->
+<section id="team" class="bg-slate-900 text-white py-16">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+<div class="text-center mb-12">
+<div class="text-emerald-400 text-xs font-bold tracking-[2px]">MEET THE TEAM</div>
+<h2 data-i18n="team_title" class="text-5xl font-bold tracking-tighter heading-serif">Our Teachers</h2>
+<p data-i18n="team_sub" class="mt-3 text-slate-400 max-w-md mx-auto">Highly qualified native Spanish teachers passionate about helping you speak with confidence.</p>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="teacher-card bg-slate-800 border border-slate-700 rounded-3xl p-6 text-center">
+<img src="assets/images/Ricardo-250.png" alt="Ricardo Tapia - Spanish teacher" class="w-28 h-28 mx-auto rounded-2xl object-cover mb-5 ring-4 ring-slate-700">
+<h3 class="font-bold text-xl tracking-tight">Ricardo Tapia</h3>
+<p class="text-emerald-400 text-sm font-medium mb-3">Native from Colombia</p>
+<p class="text-sm text-slate-300 leading-relaxed">Over 10 years teaching Spanish and training in bilingual education, tourism and culture. Ricardo combines pedagogical knowledge with a practical, human approach. He follows the CEFR and creates motivating classes focused especially on conversation.</p>
+</div>
+
+<div class="teacher-card bg-slate-800 border border-slate-700 rounded-3xl p-6 text-center">
+<img src="assets/images/Laura-mejor-688.jpg" alt="Laura Reta - Spanish teacher" class="w-28 h-28 mx-auto rounded-2xl object-cover mb-5 ring-4 ring-slate-700">
+<h3 class="font-bold text-xl tracking-tight">Laura Reta</h3>
+<p class="text-emerald-400 text-sm font-medium mb-3">Native from Argentina</p>
+<p class="text-sm text-slate-300 leading-relaxed">Over 20 years teaching Spanish to foreigners. Laura makes grammar fun and practical through games, real-life situations and Argentine culture. She also offers the unique “Spanish with Argentine Music” modality using tango, zamba and folklore.</p>
+</div>
+
+<div class="teacher-card bg-slate-800 border border-slate-700 rounded-3xl p-6 text-center">
+<img src="assets/images/Euge-250.png" alt="Eugenia Petrel - Spanish teacher" class="w-28 h-28 mx-auto rounded-2xl object-cover mb-5 ring-4 ring-slate-700">
+<h3 class="font-bold text-xl tracking-tight">Eugenia Petrel (Euge)</h3>
+<p class="text-emerald-400 text-sm font-medium mb-3">Native from Argentina</p>
+<p class="text-sm text-slate-300 leading-relaxed">Lived in Germany for five years. This experience allows her to deeply understand the challenges German-speaking learners encounter. With more than 14 years teaching both Spanish and English, she creates classes that are close, encouraging, and enjoyable.</p>
+</div>
+
+<div class="teacher-card bg-slate-800 border border-slate-700 rounded-3xl p-6 text-center">
+<img src="assets/images/Flor-mejorada.jpg" alt="Florencia García - Spanish teacher" class="w-28 h-28 mx-auto rounded-2xl object-cover mb-5 ring-4 ring-slate-700">
+<h3 class="font-bold text-xl tracking-tight">Florencia García</h3>
+<p class="text-emerald-400 text-sm font-medium mb-3">Native from Argentina</p>
+<p class="text-sm text-slate-300 leading-relaxed">Her passion for languages grew during a challenging cultural exchange in the US. With a psychology background, she supports students with empathy and tailored strategies, bringing the language to life through conversation.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FREE LEVEL TEST -->
+<section id="test" class="max-w-screen-2xl mx-auto px-6 md:px-8 py-20">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-10">
+<div class="inline-flex items-center gap-x-2 bg-emerald-100 text-emerald-700 px-4 py-1.5 rounded-3xl text-xs font-bold tracking-wider mb-3">
+<i class="fa-solid fa-check-double"></i>
+<span>OFFICIAL CEFR PLACEMENT TEST</span>
+</div>
+<h2 data-i18n="test_title" class="text-5xl font-bold tracking-tighter heading-serif">Free Level Test</h2>
+<p data-i18n="test_sub" class="mt-3 text-xl text-slate-600 max-w-md mx-auto">Take our free test and discover exactly where you are so we can recommend the best option for you. It takes about 8 minutes.</p>
+</div>
+
+<div id="test-container" class="bg-white border border-slate-200 rounded-3xl shadow-xl overflow-hidden">
+
+<div id="intro-screen">
+<div class="px-8 md:px-12 pt-10 pb-8 text-center">
+<div class="mx-auto w-16 h-16 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-2xl flex items-center justify-center mb-6 shadow-inner">
+<i class="fa-solid fa-globe text-white text-4xl"></i>
+</div>
+
+<h3 class="text-3xl font-bold tracking-tight mb-3">Discover your real Spanish level</h3>
+<p class="text-slate-600 max-w-sm mx-auto">Professional assessment according to the <span class="font-semibold text-emerald-700">Common European Framework of Reference (CEFR)</span></p>
+
+<div class="flex flex-wrap justify-center gap-2 my-8">
+<div class="px-4 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded-2xl flex items-center gap-x-1.5"><span>A1</span> <span class="font-normal">Beginner</span></div>
+<div class="px-4 py-1 bg-teal-100 text-teal-700 text-xs font-bold rounded-2xl flex items-center gap-x-1.5"><span>A2</span> <span class="font-normal">Elementary</span></div>
+<div class="px-4 py-1 bg-amber-100 text-amber-700 text-xs font-bold rounded-2xl flex items-center gap-x-1.5"><span>B1</span> <span class="font-normal">Intermediate</span></div>
+<div class="px-4 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-2xl flex items-center gap-x-1.5"><span>B2</span> <span class="font-normal">Upper Intermediate</span></div>
+<div class="px-4 py-1 bg-rose-100 text-rose-700 text-xs font-bold rounded-2xl flex items-center gap-x-1.5"><span>C1</span> <span class="font-normal">Advanced</span></div>
+<div class="px-4 py-1 bg-violet-100 text-violet-700 text-xs font-bold rounded-2xl flex items-center gap-x-1.5"><span>C2</span> <span class="font-normal">Proficiency</span></div>
+</div>
+
+<div class="max-w-md mx-auto bg-slate-50 border border-slate-100 rounded-2xl p-6 text-left">
+<div class="flex items-start gap-x-4">
+<i class="fa-solid fa-clock text-3xl text-emerald-600 mt-0.5"></i>
+<div>
+<div class="font-semibold">8–12 minutes • 20 questions</div>
+<div class="text-sm text-slate-600 mt-0.5">Instant results + personalized recommendations from Solange Hansen</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="px-8 pb-10">
+<button onclick="startTest()"
+class="w-full max-w-md mx-auto flex items-center justify-center gap-x-3 bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-900 transition text-white font-semibold text-lg py-4 rounded-2xl shadow-lg shadow-emerald-700/30">
+<span>Start the test now</span>
+<i class="fa-solid fa-arrow-right"></i>
+</button>
+
+<div class="text-center mt-5 text-xs text-slate-500 flex items-center justify-center gap-x-2">
+<i class="fa-solid fa-shield-halved"></i>
+<span>100% free • No registration required • Designed by Solange Hansen</span>
+</div>
+</div>
+</div>
+
+<div id="quiz-screen" class="hidden">
+<div class="px-8 pt-8 pb-4 bg-slate-50 border-b">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-baseline gap-x-2">
+<span id="question-counter" class="font-mono text-sm font-bold text-emerald-700">01 / 20</span>
+<span class="text-sm text-slate-500">questions</span>
+</div>
+<div class="text-xs px-3 py-1 bg-white border rounded-2xl text-slate-500 font-medium flex items-center gap-x-1.5">
+<i class="fa-solid fa-globe"></i>
+<span>CEFR aligned</span>
+</div>
+</div>
+<div class="h-2 bg-slate-200 rounded-full overflow-hidden">
+<div id="progress-bar" class="h-2 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full transition-all" style="width: 5%"></div>
+</div>
+</div>
+
+<div class="p-8 md:p-10">
+<div id="question-text" class="text-2xl md:text-3xl font-semibold text-slate-900 leading-tight tracking-tight mb-8"></div>
+
+<div id="options-container" class="grid gap-3"></div>
+</div>
+
+<div class="px-8 py-6 bg-slate-50 border-t flex items-center justify-between">
+<button onclick="prevQuestion()" id="prev-btn"
+class="flex items-center gap-x-2 px-5 py-2.5 text-sm font-semibold text-slate-600 hover:text-slate-900 transition disabled:opacity-40">
+<i class="fa-solid fa-chevron-left"></i>
+<span>Previous</span>
+</button>
+
+<button onclick="nextQuestion()" id="next-btn"
+class="flex items-center gap-x-3 px-8 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold rounded-2xl text-sm transition active:scale-[0.985]">
+<span id="next-btn-text">Next question</span>
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+</div>
+
+<div id="results-screen" class="hidden">
+<div class="px-8 pt-9 pb-8 text-center bg-gradient-to-b from-white to-slate-50">
+<div class="text-emerald-600 text-sm font-bold tracking-[1.5px] mb-3">YOUR OFFICIAL RESULT</div>
+
+<div id="result-level-badge" class="inline-flex items-center justify-center px-8 py-2 rounded-3xl text-4xl font-bold tracking-tighter mb-1"></div>
+
+<div id="result-level-name" class="text-4xl font-bold tracking-tighter text-slate-900 mb-1"></div>
+<div id="result-score" class="text-xl text-slate-600 font-medium"></div>
+</div>
+
+<div class="px-8 pb-8">
+<div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 mb-6">
+<div class="uppercase text-xs tracking-widest font-bold text-emerald-700 mb-2">According to the official CEFR</div>
+<div id="result-descriptor" class="text-[15px] leading-relaxed text-slate-700"></div>
+</div>
+
+<div class="mb-8">
+<div class="font-semibold text-lg mb-3 flex items-center gap-x-2">
+<i class="fa-solid fa-lightbulb text-amber-500"></i>
+<span>Personalized recommendations</span>
+</div>
+<div id="result-recommendations" class="text-[15px] leading-relaxed text-slate-700 space-y-2"></div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<button onclick="copyResults()" class="flex items-center justify-center gap-x-2 border border-slate-300 hover:bg-slate-50 transition font-semibold py-3.5 rounded-2xl text-sm">
+<i class="fa-solid fa-copy"></i>
+<span>Copy results</span>
+</button>
+
+<button onclick="sendByEmail()" class="flex items-center justify-center gap-x-2 border border-slate-300 hover:bg-slate-50 transition font-semibold py-3.5 rounded-2xl text-sm">
+<i class="fa-solid fa-envelope"></i>
+<span>Send by email</span>
+</button>
+
+<button onclick="scheduleClass()" class="flex items-center justify-center gap-x-2 bg-emerald-700 hover:bg-emerald-800 transition text-white font-semibold py-3.5 rounded-2xl text-sm shadow-lg shadow-emerald-700/30">
+<i class="fa-solid fa-calendar-check"></i>
+<span>Schedule a trial class</span>
+</button>
+</div>
+
+<div class="text-center mt-6">
+<button onclick="restartTest()" class="text-sm text-slate-500 hover:text-emerald-700 flex items-center gap-x-2 mx-auto">
+<i class="fa-solid fa-redo"></i>
+<span class="font-medium">Retake the test</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="text-center mt-6 text-xs text-slate-500 max-w-md mx-auto">
+This test is an orientative self-assessment tool. For a precise and personalized evaluation, book your free trial class with Solange Hansen.
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+<div class="flex flex-col md:flex-row justify-between gap-y-10">
+<div>
+<div class="flex items-center gap-x-3 mb-4">
+<div class="w-9 h-9 bg-gradient-to-br from-[#EA1E1D] via-[#8E44AD] to-[#1B691E] rounded-2xl flex items-center justify-center">
+<i class="fa-solid fa-lightbulb text-white"></i>
+</div>
+<span class="font-bold text-xl text-white tracking-tighter">Latino Lighthouse</span>
+</div>
+<p class="text-sm max-w-xs">Your guiding light to Spanish that flows.<br>Founded by Solange Hansen • Buenos Aires, Argentina</p>
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-8 text-sm">
+<div>
+<div class="font-semibold text-white mb-3 tracking-wider text-xs" data-i18n="footer_explore">EXPLORE</div>
+<div class="space-y-1.5">
+<a href="#offer" class="block hover:text-white transition" data-i18n="nav_offer">What We Offer</a>
+<a href="#courses" class="block hover:text-white transition" data-i18n="nav_courses">Courses & Workshops</a>
+<a href="#culture" class="block hover:text-white transition" data-i18n="nav_culture">Latin Culture</a>
+<a href="#masterclasses" class="block hover:text-white transition" data-i18n="nav_master">Masterclasses</a>
+<a href="#conversation" class="block hover:text-white transition" data-i18n="nav_conversation">Conversation</a>
+<a href="#test" class="block hover:text-white transition" data-i18n="nav_test">Level Test</a>
+</div>
+</div>
+<div>
+<div class="font-semibold text-white mb-3 tracking-wider text-xs" data-i18n="footer_company">COMPANY</div>
+<div class="space-y-1.5">
+<a href="#about" class="block hover:text-white transition" data-i18n="footer_about">About Solange</a>
+<a href="#team" class="block hover:text-white transition" data-i18n="nav_team">Our Teachers</a>
+</div>
+</div>
+<div>
+<div class="font-semibold text-white mb-3 tracking-wider text-xs">CONNECT</div>
+<div class="space-y-3">
+<div>
+<div class="text-[11px] uppercase tracking-wider text-slate-500 mb-0.5" data-i18n="footer_email_label">Email</div>
+<a href="mailto:hansensolange@gmail.com" class="block hover:text-white transition">hansensolange@gmail.com</a>
+</div>
+<div>
+<div class="text-[11px] uppercase tracking-wider text-slate-500 mb-0.5" data-i18n="footer_phone_label">Phone</div>
+<a href="https://wa.me/5491180432323" target="_blank" rel="noopener noreferrer" class="block hover:text-white transition">+54 9 11 8043-2323</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mt-12 pt-8 border-t border-slate-800 text-xs flex flex-col md:flex-row justify-between items-center gap-y-2">
+<div>© 2026 Latino Lighthouse. All rights reserved. • Designed with ❤️ for language lovers</div>
+<div class="flex items-center gap-x-4">
+<span>Privacy</span>
+<span>Terms</span>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+function bindInlineHandlers(root) {
+if (!root) return;
+root.querySelectorAll("[onclick]").forEach((el) => {
+const code = el.getAttribute("onclick");
+if (!code || el.dataset.llBound) return;
+el.dataset.llBound = "1";
+el.removeAttribute("onclick");
+el.addEventListener("click", (event) => {
+const fn = new Function("event", code);
+fn.call(el, event);
+});
+});
+}
+
+function initTailwind() {
+document.documentElement.style.setProperty('--accent-emerald', '#1B691E');
+}
+
+function initNavbar() {
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+if (window.scrollY > 20) {
+navbar.classList.add('nav-scrolled');
+} else {
+navbar.classList.remove('nav-scrolled');
+}
+});
+}
+
+function toggleMobileMenu() {
+const t = translations[currentLang] || translations.en;
+const menu = document.createElement('div');
+menu.className = 'fixed inset-0 bg-black/60 z-[100] lg:hidden';
+menu.innerHTML = `
+<div class="bg-white w-80 max-w-[88vw] h-full p-6 overflow-y-auto">
+<div class="flex justify-between items-center mb-8">
+<div class="font-bold text-xl">Latino Lighthouse</div>
+<button class="text-2xl text-slate-400" onclick="this.closest('.fixed').remove()">×</button>
+</div>
+<div class="flex flex-col gap-y-1 text-lg font-medium">
+<a href="#courses" class="py-2" onclick="this.closest('.fixed').remove()">${t.nav_courses}</a>
+<a href="#culture" class="py-2" onclick="this.closest('.fixed').remove()">${t.nav_culture}</a>
+<a href="#masterclasses" class="py-2" onclick="this.closest('.fixed').remove()">${t.nav_master}</a>
+<a href="#conversation" class="py-2" onclick="this.closest('.fixed').remove()">${t.nav_conversation}</a>
+<a href="#about" class="py-2" onclick="this.closest('.fixed').remove()">${t.nav_about}</a>
+<a href="#team" class="py-2" onclick="this.closest('.fixed').remove()">${t.nav_team}</a>
+<a href="#test" class="py-2" onclick="this.closest('.fixed').remove()">${t.nav_test}</a>
+</div>
+<div class="mt-8 pt-6 border-t">
+<a href="#test" class="block w-full text-center bg-emerald-700 text-white py-3 rounded-2xl font-semibold" onclick="this.closest('.fixed').remove()">${t.nav_cta}</a>
+</div>
+</div>
+`;
+document.body.appendChild(menu);
+bindInlineHandlers(menu);
+}
+
+let currentLang = 'en';
+
+const translations = {
+en: {
+brand_sub: "Online Spanish Academy • Global Community • Latin Culture",
+nav_offer: "What We Offer",
+nav_courses: "Courses & Workshops",
+nav_culture: "Latin Culture",
+nav_master: "Masterclasses",
+nav_conversation: "Conversation",
+nav_about: "About Me",
+nav_team: "Our Teachers",
+nav_test: "Level Test",
+nav_cta: "Take the free test",
+hero_title: "Your guiding light<br>to Spanish that flows",
+hero_sub: "Have you studied Spanish but feel like you're losing it? Latino Lighthouse is your warm, professional space to practice with purpose, connect with people like you, and finally use the language in real life.",
+hero_cta1: "Explore our offerings",
+offer_kicker: "EVERYTHING YOU NEED",
+offer_title: "What We Offer at Latino Lighthouse",
+offer_sub: "Choose the path that fits your life and goals. Every offering is designed to take you from understanding Spanish to speaking it with ease and joy.",
+offer_cta: "Ready to stop just “knowing” Spanish and finally start speaking it for real?",
+offer_cta2: "Latino Lighthouse is much more than classes: it’s a community.",
+offer_1_title: "Private Classes",
+offer_1_desc: "One-to-one with qualified native teachers. Personalized to your goals and schedule.",
+offer_2_title: "Courses by Level A1–C2",
+offer_2_desc: "Structured programs from beginner to proficiency. Small groups, from one student.",
+offer_3_title: "Business Spanish",
+offer_3_desc: "Live classes with a certified teacher and lawyer, or self-study for busy professionals.",
+offer_4_title: "Spanish for Tourism & Migration",
+offer_4_desc: "Practical language training for traveling or moving to a Spanish-speaking country. Real-life situations.",
+offer_5_title: "One-of-a-kind Workshops",
+offer_5_desc: "The Matrix for past tenses, Latin music for the subjunctive, tango for Argentine Spanish.",
+offer_6_title: "Cinema Together",
+offer_6_desc: "Watch Spanish films online, laugh, debate, and pick up real colloquial expressions. Free sessions.",
+offer_7_title: "Converse Hispanic",
+offer_7_desc: "Country-by-country conversations about life, customs, and Latin American culture.",
+offer_8_title: "Idioms & Borders",
+offer_8_desc: "Spanish idioms, regional flavors, and cultural deep-dives that make the language come alive. Free.",
+offer_9_title: "Interactive Masterclasses",
+offer_9_desc: "The topics students debate most: Ser vs. Estar, Por vs. Para, pronouns, and more.",
+offer_10_title: "Conversation Practice",
+offer_10_desc: "Wellness with a psychologist, literature with Harry Potter and Lord of the Rings fans, plus everyday topics.",
+courses_kicker: "YOUR PATH",
+courses_title: "Courses and Workshops",
+courses_sub: "Private lessons, courses from beginner to proficiency, and signature workshops. Small groups, from one student.",
+card_private_title: "Private Lessons",
+badge_oto: "One-to-One",
+card_private_sub: "Personalized Lessons | All levels",
+badge_en: "For English Speakers • Beginner",
+badge_de: "For German Speakers • Beginner",
+badge_fr: "For French Speakers • Beginner",
+lvl_a2: "Elementary",
+badge_a2: "A2 LEVEL",
+lvl_b1: "Intermediate",
+badge_b1: "B1 LEVEL",
+lvl_b2: "Upper-Intermediate",
+badge_b2: "B2 LEVEL",
+lvl_c1: "Advanced",
+badge_c1: "C1 LEVEL",
+lvl_c2: "Proficiency",
+badge_c2: "C2 LEVEL",
+course_pace: "8 classes/month · 1.5h each · 3-month course",
+culture_kicker: "100% FREE",
+culture_title: "Latin Culture and Free Encounters",
+culture_sub: "Films, countries, idioms and the Spanish of every border. Come in, talk, and stay for the culture.",
+master_kicker: "GO DEEPER",
+master_title: "Masterclasses",
+master_sub: "Short, focused sessions on the questions every Spanish learner asks.",
+future_sub: "A2-B1 Level | 1.5 hours",
+conv_kicker: "SPEAK FOR REAL",
+conv_title: "Conversation Practice",
+conv_sub: "Guided practice on real topics, from wellness and travel to literature.",
+classes_footnote: "Can't find what you're looking for? <a href=\"#test\" class=\"text-emerald-700 font-semibold hover:underline\">Take the free level test</a> and we'll recommend the perfect group for you.",
+btn_book: "See dates & price →",
+btn_free: "See dates · 100% free",
+about_title: "Hi! I’m Solange Hansen",
+about_p1: "I’m a lawyer from Argentina specialized in Immigration and Labor Law, and a Spanish teacher for foreigners. Since graduating as a Spanish teacher, I’ve had the privilege of guiding students from all over the world through private lessons and at the international Berlitz Institute. I’ve prepared them for a variety of exams, with a special focus on dynamic group classes.",
+about_p2: "I founded Latino Lighthouse with one clear mission: to help you move from “I understand Spanish” to speaking it with real confidence. As you know, the heart of any language is speaking it—both while learning and to maintain your fluency. With us, you’ll achieve this through full immersion from day one, through real conversations, role-plays, videos, and rich cultural context.",
+about_p3: "My goal is for you to enjoy the process to the fullest while making real, lasting progress. I want Latino Lighthouse to be a true community for you: a welcoming space where you can make friends, practice the language, and immerse yourself in the vibrant Latin culture.",
+contact_direct: "Contact me directly",
+contact_linkedin: "Connect on LinkedIn",
+team_title: "Our Teachers",
+team_sub: "Highly qualified native Spanish teachers passionate about helping you speak with confidence.",
+test_title: "Free Level Test",
+test_sub: "Take our free test and discover exactly where you are so we can recommend the best option for you. It takes about 8 minutes.",
+footer_explore: "EXPLORE",
+footer_company: "COMPANY",
+footer_about: "About Solange",
+footer_email_label: "Email",
+footer_phone_label: "Phone"
+},
+es: {
+brand_sub: "Academia de Español Online • Comunidad Global • Cultura Latina",
+nav_offer: "Qué ofrecemos",
+nav_courses: "Cursos y talleres",
+nav_culture: "Cultura latina",
+nav_master: "Masterclasses",
+nav_conversation: "Conversación",
+nav_about: "Sobre mí",
+nav_team: "Profesores",
+nav_test: "Test de nivel",
+nav_cta: "Hacer el test gratis",
+hero_title: "Tu luz guía hacia<br>un español que fluye",
+hero_sub: "¿Has estudiado español pero sientes que lo estás perdiendo? Latino Lighthouse es tu espacio cálido y profesional para practicar con propósito, conectar con personas como tú y, por fin, usar el idioma en la vida real.",
+hero_cta1: "Explora lo que ofrecemos",
+offer_kicker: "TODO LO QUE NECESITÁS",
+offer_title: "Qué ofrecemos en Latino Lighthouse",
+offer_sub: "Elegí el camino que se adapte a tu vida y a tus metas. Cada propuesta está pensada para que pases de entender el español a hablarlo con soltura y alegría.",
+offer_cta: "¿Listo para dejar de solo “entender” español y, por fin, empezar a hablarlo de verdad?",
+offer_cta2: "Latino Lighthouse es mucho más que clases: es una comunidad.",
+offer_1_title: "Clases privadas",
+offer_1_desc: "Uno a uno con profesores nativos calificados. Personalizadas según tus metas y tu horario.",
+offer_2_title: "Cursos por nivel A1–C2",
+offer_2_desc: "Programas estructurados de principiante a maestría. Grupos reducidos, desde un estudiante.",
+offer_3_title: "Español de negocios",
+offer_3_desc: "Clases en vivo con una profesora certificada y abogada, o autoestudio para profesionales ocupados.",
+offer_4_title: "Español para turismo y migración",
+offer_4_desc: "Entrenamiento práctico para viajar o mudarte a un país de habla hispana. Situaciones reales.",
+offer_5_title: "Talleres únicos",
+offer_5_desc: "Matrix para los pasados, música latina para el subjuntivo y tango para el español argentino.",
+offer_6_title: "Cine juntos",
+offer_6_desc: "Vemos películas en español, reímos, debatimos y nos llevamos expresiones coloquiales reales. Encuentros gratis.",
+offer_7_title: "Converse Hispanic",
+offer_7_desc: "Conversaciones país por país sobre la vida, las costumbres y la cultura latinoamericana.",
+offer_8_title: "Modismos y fronteras",
+offer_8_desc: "Modismos, sabores regionales y profundizaciones culturales que hacen vivir el idioma. Gratis.",
+offer_9_title: "Masterclasses interactivas",
+offer_9_desc: "Los temas más debatidos del español: Ser vs. Estar, Por vs. Para, pronombres y más.",
+offer_10_title: "Práctica de conversación",
+offer_10_desc: "Hablamos de bienestar con una psicóloga, recorremos la literatura con fans de Harry Potter y El Señor de los Anillos, y practicamos temas de todos los días.",
+courses_kicker: "TU CAMINO",
+courses_title: "Cursos y talleres",
+courses_sub: "Clases privadas, cursos de principiante a maestría y talleres emblemáticos. Grupos reducidos, desde un estudiante.",
+card_private_title: "Clases privadas",
+badge_oto: "Uno a uno",
+card_private_sub: "Clases personalizadas | Todos los niveles",
+badge_en: "Para hablantes de inglés • Principiante",
+badge_de: "Para hablantes de alemán • Principiante",
+badge_fr: "Para hablantes de francés • Principiante",
+lvl_a2: "Elemental",
+badge_a2: "NIVEL A2",
+lvl_b1: "Intermedio",
+badge_b1: "NIVEL B1",
+lvl_b2: "Intermedio alto",
+badge_b2: "NIVEL B2",
+lvl_c1: "Avanzado",
+badge_c1: "NIVEL C1",
+lvl_c2: "Maestría",
+badge_c2: "NIVEL C2",
+course_pace: "8 clases/mes · 1.5 h cada una · curso de 3 meses",
+culture_kicker: "100% GRATIS",
+culture_title: "Cultura latina y encuentros gratis",
+culture_sub: "Cine, países, modismos y el español de cada frontera. Entrá, hablá y quedate por la cultura.",
+master_kicker: "IR MÁS LEJOS",
+master_title: "Masterclasses",
+master_sub: "Sesiones cortas y enfocadas sobre las preguntas que todo estudiante de español se hace.",
+future_sub: "Nivel A2-B1 | 1 hora y media",
+conv_kicker: "HABLAR DE VERDAD",
+conv_title: "Práctica de conversación",
+conv_sub: "Práctica guiada sobre temas reales: bienestar, viajes y literatura.",
+classes_footnote: "¿No encontrás lo que buscás? <a href=\"#test\" class=\"text-emerald-700 font-semibold hover:underline\">Hacé el test de nivel gratis</a> y te recomendamos el grupo ideal.",
+btn_book: "Ver fechas y precio →",
+btn_free: "Ver fechas · 100% gratis",
+about_title: "¡Hola! Soy Solange Hansen",
+about_p1: "Soy abogada de Argentina especializada en Derecho Migratorio y Laboral, y profesora de español para extranjeros. Desde que me gradué como profesora de español, he tenido el privilegio de guiar a estudiantes de todo el mundo a través de clases privadas y en el Instituto Internacional Berlitz. Los he preparado para una variedad de exámenes, con especial enfoque en clases grupales dinámicas.",
+about_p2: "Fundé Latino Lighthouse con una misión clara: ayudarte a pasar de “entiendo español” a hablarlo con confianza real. Como sabes, el corazón de cualquier idioma es hablarlo, tanto mientras aprendes como para mantener tu fluidez. Con nosotros lograrás esto a través de inmersión total desde el primer día, mediante conversaciones reales, role-plays, videos y un rico contexto cultural.",
+about_p3: "Mi objetivo es que disfrutes el proceso al máximo mientras haces un progreso real y duradero. Quiero que Latino Lighthouse sea una verdadera comunidad para ti: un espacio acogedor donde puedas hacer amigos, practicar el idioma y sumergirte en la vibrante cultura latina.",
+contact_direct: "Contáctame directamente",
+contact_linkedin: "Conectar en LinkedIn",
+team_title: "Nuestros profesores",
+team_sub: "Profesores nativos altamente calificados, apasionados por ayudarte a hablar con confianza.",
+test_title: "Test de nivel gratis",
+test_sub: "Hacé nuestro test gratis y descubrí exactamente en qué nivel estás para recomendarte la mejor opción. Toma unos 8 minutos.",
+footer_explore: "EXPLORAR",
+footer_company: "ACADEMIA",
+footer_about: "Sobre Solange",
+footer_email_label: "Email",
+footer_phone_label: "Teléfono"
+}
+};
+
+function switchLanguage(lang) {
+currentLang = lang;
+
+document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+document.getElementById('btn-en').classList.toggle('text-slate-600', lang !== 'en');
+document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+document.getElementById('btn-es').classList.toggle('text-slate-600', lang !== 'es');
+
+document.querySelectorAll('[data-i18n]').forEach(el => {
+const key = el.getAttribute('data-i18n');
+if (translations[lang] && translations[lang][key]) {
+el.innerHTML = translations[lang][key];
+}
+});
+
+document.documentElement.lang = lang;
+localStorage.setItem('preferredLang', lang);
+}
+
+function initLanguage() {
+const saved = localStorage.getItem('preferredLang');
+if (saved) {
+switchLanguage(saved);
+} else {
+document.getElementById('btn-en').classList.add('active');
+}
+}
+
+// Level Test JavaScript (kept exactly as in your original file)
+const questions = [
+{ id: 1, level: "A1", question: "¿De dónde ___ tú?", options: ["soy", "estás", "eres", "está"], correctIndex: 2 },
+{ id: 2, level: "A1", question: "___ libro que estoy leyendo es muy interesante.", options: ["El", "La", "Un", "Una"], correctIndex: 0 },
+{ id: 3, level: "A1", question: "Mis amigos ___ muy simpáticos y generosos.", options: ["es", "son", "está", "están"], correctIndex: 1 },
+{ id: 4, level: "A1", question: "Yo ___ en Buenos Aires desde hace tres años.", options: ["vivo", "vives", "vivimos", "viven"], correctIndex: 0 },
+{ id: 5, level: "A2", question: "El fin de semana pasado nosotros ___ una película en casa.", options: ["vemos", "vimos", "veíamos", "veremos"], correctIndex: 1 },
+{ id: 6, level: "A2", question: "Mañana por la tarde ___ al médico para un chequeo.", options: ["voy a ir", "fui", "iba", "iré"], correctIndex: 0 },
+{ id: 7, level: "A2", question: "Este restaurante es ___ que el de la esquina.", options: ["más caro", "el más caro", "tan caro", "menos caro"], correctIndex: 0 },
+{ id: 8, level: "A2", question: "¿Puedes decirme dónde ___ la estación de tren más cercana?", options: ["está", "es", "hay", "tiene"], correctIndex: 0 },
+{ id: 9, level: "B1", question: "Cuando ___ pequeña, me ___ mucho leer novelas.", options: ["era / gustaba", "fui / gustó", "era / gustó", "fui / gustaba"], correctIndex: 0 },
+{ id: 10, level: "B1", question: "Este mes ya ___ tres libros nuevos sobre historia.", options: ["he leído", "leí", "leía", "leeré"], correctIndex: 0 },
+{ id: 11, level: "B1", question: "Espero que ___ buen tiempo este fin de semana para la excursión.", options: ["hace", "haga", "hacía", "hará"], correctIndex: 1 },
+{ id: 12, level: "B1", question: "Estudio español ___ poder trabajar algún día en un país hispanohablante.", options: ["por", "para", "porque", "con"], correctIndex: 1 },
+{ id: 13, level: "B2", question: "Si ___ más tiempo libre, ___ más viajes por Latinoamérica.", options: ["tuviera / haría", "tengo / haré", "tenía / hacía", "tendré / haría"], correctIndex: 0 },
+{ id: 14, level: "B2", question: "El médico recomienda que los pacientes ___ más ejercicio físico regularmente.", options: ["hagan", "hacen", "hacían", "harán"], correctIndex: 0 },
+{ id: 15, level: "B2", question: "___ las dificultades económicas, logramos terminar el proyecto a tiempo.", options: ["A pesar de", "Debido a", "Gracias a", "Por lo tanto"], correctIndex: 0 },
+{ id: 16, level: "B2", question: "Me dijo que ___ muy cansado después del largo viaje en bus.", options: ["está", "estaba", "estuviera", "esté"], correctIndex: 1 },
+{ id: 17, level: "C1", question: "Para cuando termines la carrera universitaria, yo ya ___ mi máster.", options: ["habré terminado", "termino", "terminaba", "había terminado"], correctIndex: 0 },
+{ id: 18, level: "C1", question: "No me ___ ni frío ni calor lo que piensen los demás de mis decisiones.", options: ["importa", "da", "hace", "pone"], correctIndex: 1 },
+{ id: 19, level: "C1", question: "Es fundamental que se ___ en cuenta la opinión de todos los miembros del equipo.", options: ["tenga", "tiene", "tenía", "tendrá"], correctIndex: 0 },
+{ id: 20, level: "C1", question: "Buscamos una casa que ___ tranquila, con jardín y cerca del metro.", options: ["esté / tenga", "está / tiene", "estuviera / tuviera", "es / tiene"], correctIndex: 0 }
+];
+
+let currentQuestion = 0;
+let userAnswers = [];
+
+function startTest() {
+document.getElementById('intro-screen').classList.add('hidden');
+document.getElementById('quiz-screen').classList.remove('hidden');
+currentQuestion = 0;
+userAnswers = new Array(questions.length).fill(null);
+showQuestion();
+}
+
+function showQuestion() {
+const q = questions[currentQuestion];
+const container = document.getElementById('options-container');
+container.innerHTML = '';
+
+document.getElementById('question-text').innerHTML = q.question;
+
+document.getElementById('question-counter').textContent =
+`${String(currentQuestion + 1).padStart(2, '0')} / ${questions.length}`;
+
+const progress = ((currentQuestion + 1) / questions.length) * 100;
+document.getElementById('progress-bar').style.width = `${progress}%`;
+
+q.options.forEach((optionText, index) => {
+const btn = document.createElement('button');
+btn.className = `option-btn w-full text-left px-6 py-4 border-2 border-slate-200 rounded-2xl flex items-center gap-x-4 text-[15px] font-medium hover:border-emerald-300 active:bg-slate-50 transition`;
+
+btn.innerHTML = `
+<div class="flex-shrink-0 w-7 h-7 rounded-full border-2 border-slate-300 flex items-center justify-center text-xs font-mono font-bold text-slate-400">
+${String.fromCharCode(65 + index)}
+</div>
+<div class="flex-1 text-slate-800">${optionText}</div>
+`;
+
+btn.onclick = () => selectOption(index, btn);
+
+if (userAnswers[currentQuestion] === index) {
+btn.classList.add('!border-emerald-700', '!bg-emerald-50');
+btn.querySelector('div').classList.add('!border-emerald-700', '!text-emerald-700');
+}
+
+container.appendChild(btn);
+});
+
+document.getElementById('prev-btn').disabled = currentQuestion === 0;
+
+const nextBtn = document.getElementById('next-btn');
+const nextText = document.getElementById('next-btn-text');
+
+if (currentQuestion === questions.length - 1) {
+nextText.textContent = 'See my results';
+nextBtn.onclick = finishTest;
+} else {
+nextText.textContent = 'Next question';
+nextBtn.onclick = nextQuestion;
+}
+}
+
+function selectOption(index, btnElement) {
+const allBtns = document.querySelectorAll('#options-container button');
+allBtns.forEach(b => {
+b.classList.remove('!border-emerald-700', '!bg-emerald-50');
+const icon = b.querySelector('div');
+if (icon) icon.classList.remove('!border-emerald-700', '!text-emerald-700');
+});
+
+btnElement.classList.add('!border-emerald-700', '!bg-emerald-50');
+btnElement.querySelector('div').classList.add('!border-emerald-700', '!text-emerald-700');
+
+userAnswers[currentQuestion] = index;
+}
+
+function nextQuestion() {
+if (currentQuestion < questions.length - 1) {
+currentQuestion++;
+showQuestion();
+}
+}
+
+function prevQuestion() {
+if (currentQuestion > 0) {
+currentQuestion--;
+showQuestion();
+}
+}
+
+function finishTest() {
+let score = 0;
+userAnswers.forEach((answer, idx) => {
+if (answer === questions[idx].correctIndex) score++;
+});
+
+const level = getLevel(score);
+
+document.getElementById('quiz-screen').classList.add('hidden');
+document.getElementById('results-screen').classList.remove('hidden');
+
+showResults(score, level);
+}
+
+function getLevel(score) {
+if (score <= 4) return "A1";
+if (score <= 8) return "A2";
+if (score <= 12) return "B1";
+if (score <= 16) return "B2";
+if (score <= 19) return "C1";
+return "C2";
+}
+
+function showResults(score, level) {
+const levelInfo = {
+"A1": { name: "A1 — Beginner", color: "emerald", descriptor: "You can understand and use very basic everyday expressions to satisfy concrete needs. You can introduce yourself and others, and ask simple questions about personal details.", recommendations: "You're starting your Spanish journey. Focus on basic structures (ser/estar, articles, present tense) and survival vocabulary. Our conversation groups from scratch will help you gain confidence from day one with the direct immersion method." },
+"A2": { name: "A2 — Elementary", color: "teal", descriptor: "You can understand phrases and expressions related to areas of immediate relevance (family, shopping, basic work). You can describe in simple terms your background and immediate needs.", recommendations: "You can already handle routine situations. It's time to consolidate the preterite and future with 'ir a'. Our A2 conversation clubs will allow you to practice short narrations and descriptions in a relaxed, 100% Spanish environment." },
+"B1": { name: "B1 — Intermediate", color: "amber", descriptor: "You can understand the main points of clear texts on familiar topics. You can deal with most situations while traveling and produce simple connected texts on topics of personal interest.", recommendations: "You master the essentials but need to polish nuances (preterite vs imperfect, basic subjunctive, por/para). Our B1 conversation groups are ideal to gain oral fluency and confidence when expressing opinions and experiences." },
+"B2": { name: "B2 — Upper Intermediate", color: "orange", descriptor: "You can understand the main ideas of complex texts on concrete and abstract topics. You can interact with native speakers with a degree of fluency and spontaneity and produce clear, detailed texts.", recommendations: "You are at a very solid level. To reach C1 you need to work on advanced structures (subjunctive in varied contexts, conditionals, reported speech). Our B2-C1 groups will challenge you to debate and express yourself with precision." },
+"C1": { name: "C1 — Advanced", color: "rose", descriptor: "You can understand a wide range of demanding, longer texts and recognize implicit meaning. You can express yourself fluently and spontaneously without much obvious searching for expressions.", recommendations: "Excellent level. To polish the last nuances and reach mastery (C2) we recommend intensive practice of idiomatic nuances, formal/academic register and exposure to complex content. Private sessions or advanced groups with Solange will help you refine your Spanish." },
+"C2": { name: "C2 — Proficiency", color: "violet", descriptor: "You can understand with ease virtually everything heard or read. You can summarize information from different sources and express yourself spontaneously, fluently and precisely, differentiating even subtle shades of meaning.", recommendations: "Congratulations! You are close to the level of an educated native speaker. Maintain constant exposure to authentic content (literature, debates, complex podcasts). If you are looking for professional refinement or DELE C2 preparation, book a personalized session with Solange." }
+};
+
+const info = levelInfo[level];
+
+const badge = document.getElementById('result-level-badge');
+badge.innerHTML = `<span class="px-7 py-1.5 rounded-3xl bg-${info.color}-100 text-${info.color}-700">${level}</span>`;
+badge.className = `inline-flex items-center justify-center px-8 py-1.5 rounded-3xl text-4xl font-bold tracking-tighter mb-1 bg-${info.color}-100 text-${info.color}-700`;
+
+document.getElementById('result-level-name').textContent = info.name;
+document.getElementById('result-score').innerHTML =
+`${score} / ${questions.length} correct <span class="text-base font-normal">(${Math.round(score / questions.length * 100)}%)</span>`;
+
+document.getElementById('result-descriptor').textContent = info.descriptor;
+document.getElementById('result-recommendations').innerHTML = `<p>${info.recommendations}</p>`;
+
+window.lastResult = {
+level: level,
+score: score,
+total: questions.length,
+percentage: Math.round(score / questions.length * 100),
+date: new Date().toLocaleDateString('en-US')
+};
+}
+
+function copyResults() {
+if (!window.lastResult) return;
+
+const text = `My Spanish Level Test Result (CEFR) - Our Latino Lighthouse
+
+Level: ${window.lastResult.level}
+Score: ${window.lastResult.score}/${window.lastResult.total} (${window.lastResult.percentage}%)
+Date: ${window.lastResult.date}
+Conducted by: Solange Hansen • Latino Lighthouse`;
+
+navigator.clipboard.writeText(text).then(() => {
+const btns = document.querySelectorAll('#results-screen button');
+btns.forEach(b => {
+if (b.innerText.includes('Copy')) {
+const orig = b.innerHTML;
+b.innerHTML = `<i class="fa-solid fa-check"></i> <span>Copied!</span>`;
+setTimeout(() => { b.innerHTML = orig; }, 1800);
+}
+});
+}).catch(() => {
+alert('Results copied to clipboard:\\n\\n' + text);
+});
+}
+
+function sendByEmail() {
+if (!window.lastResult) return;
+
+const subject = encodeURIComponent(`My Spanish Level Test Result - ${window.lastResult.level}`);
+const body = encodeURIComponent(
+`Hello Solange,
+
+I just completed the free level test at Our Latino Lighthouse.
+Level obtained: ${window.lastResult.level}
+Score: ${window.lastResult.score} out of ${window.lastResult.total} (${window.lastResult.percentage}%)
+
+I would like to schedule a trial class or receive more information about the conversation groups.
+
+Thank you!
+Date: ${window.lastResult.date}`
+);
+
+window.location.href = `mailto:hansensolange@gmail.com?subject=${subject}&body=${body}`;
+}
+
+function scheduleClass() {
+const subject = encodeURIComponent("I'd like to schedule a trial class after taking the level test");
+const body = encodeURIComponent("Hello Solange, I completed the free level test and would like to book a trial class. Thank you!");
+window.location.href = `mailto:hansensolange@gmail.com?subject=${subject}&body=${body}`;
+}
+
+function restartTest() {
+document.getElementById('results-screen').classList.add('hidden');
+document.getElementById('intro-screen').classList.remove('hidden');
+window.lastResult = null;
+}
+
+function setupKeyboardSupport() {
+document.addEventListener('keydown', function(e) {
+const quizVisible = !document.getElementById('quiz-screen').classList.contains('hidden');
+if (!quizVisible) return;
+
+if (e.key === 'ArrowRight') {
+const nextBtn = document.getElementById('next-btn');
+if (nextBtn) nextBtn.click();
+}
+if (e.key === 'ArrowLeft') {
+const prevBtn = document.getElementById('prev-btn');
+if (prevBtn && !prevBtn.disabled) prevBtn.click();
+}
+
+if (['1','2','3','4'].includes(e.key)) {
+const idx = parseInt(e.key) - 1;
+const options = document.querySelectorAll('#options-container button');
+if (options[idx]) options[idx].click();
+}
+});
+}
+
+function init() {
+initTailwind();
+initNavbar();
+initLanguage();
+setupKeyboardSupport();
+bindInlineHandlers(document);
+console.log("%c[Latino Lighthouse] Spanish Academy ready.", "color:#64748b");
+}
+
+let llReady = false;
+function initLlSite() {
+if (llReady) return;
+llReady = true;
+init();
+}
+window.initLlSite = initLlSite;
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initLlSite);
+} else {
+  initLlSite();
+}
+</script>
+</body>
+</html>
